@@ -1,0 +1,90 @@
+ /* Style the navbar container */
+ body{
+    background-color: azure;
+}
+.navbar {
+    background-color: #1f6f91;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:4rem;
+}
+
+/* Style the navbar buttons */
+.navbar-buttons {
+    display: flex;
+}
+
+.navbar-buttons a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+/* Change color on hover */
+.navbar a:hover, .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the logo */
+.navbar-logo img {
+    width: 140px; /* Set the width of the logo */
+    height: auto;
+    margin-right: 5px; /* Add some space between the logo and buttons */
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100px;
+}
+
+/* Style the contact details */
+.contact-details {
+    margin-left: 20px; /* Add some space between contact details and the edge of the footer */
+}
+
+/* Style the Google Maps link */
+.google-maps {
+    margin-right: 20px; /* Add some space between the link and the edge of the footer */
+    text-align: right;
+}
+
+.google-maps a {
+    color: white;
+    text-decoration: none;
+}
