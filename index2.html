@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Your Website</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <!-- Buttons on the left -->
+        <div class="navbar-buttons">
+            <div class="dropdown">
+                <a href="#">Home</a>
+            </div>
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="#">Team</a>
+                    <a href="#">Mission</a>
+                    <a href="#">History</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">Service 1</a>
+                    <a href="#">Service 2</a>
+                    <a href="#">Service 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Cities</a>
+                <div class="dropdown-content">
+                    <a href="#">City 1</a>
+                    <a href="#">City 2</a>
+                    <a href="#">City 3</a>
+                </div>
+            </div>
+        </div>
+        <!-- Logo on the right -->
+        <div class="navbar-logo">
+            <img src="12577-comp-image.png" alt="Pioneer Logo">
+
+            <!-- <img src="pioneer-logo-with-tm-final-01-90x90.webp" alt="Logo"> -->
+
+        </div>
+    </div>
+
+    <!-- Image Slideshow -->
+    <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="slide">
+            <img src="pioneer_logo.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="12577-comp-image.png" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <!-- Our History Section -->
+    <h2><u>Our History</u></h2>
+    <div class="badge-container">
+    
+        <div class="badge">
+                <span class="badge-text">Experience:</span>
+                <span class="badge-number">Xyrs</span>
+        </div>
+        <div class="badge">
+                <span class="badge-text">Employees:</span>
+                <span class="badge-number">X no.</span>
+        </div>
+        <div class="badge">
+                <span class="badge-text">Clients:</span>
+                <span class="badge-number">X no.</span>
+        </div>
+        <div class="badge">
+                <span class="badge-text">Projects:</span>
+                <span class="badge-number">X no.</span>
+        </div>
+        <div class="badge">
+                <span class="badge-text">Locations:</span>
+                <span class="badge-number">X+ no.</span>
+        </div>
+    </div>
+     
+    
+
+    <div class="footer">
+        <!-- Contact details on the left -->
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p>Email: contact@example.com</p>
+            <p>Phone: +1234567890</p>
+            <p>Address: 123 Main St, City</p>
+        </div>
+        <!-- Google Maps link on the right -->
+        <div class="google-maps">
+            <a href="https://www.google.com/maps?q=random+location">View on Google Maps</a>
+        </div>
+    </div>
+    <script >
+        // JavaScript for the horizontal slideshow
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; // Hide all slides
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1; // Reset back to the first slide
+            }
+            slides[slideIndex - 1].style.display = "block"; // Show the current slide
+            // Change slide every 3 seconds (adjust this interval as needed)
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+</body>
+</html>
